@@ -1,0 +1,52 @@
+.Header{
+  height: 150px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .Header__logo{
+    font-size: 150px;
+    border-bottom: 3px;
+    color: lightblue;
+  }
+  .Header__box{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    width: 40vw;
+    .Header__username{
+      font-size: 30px;
+      color: cadetblue;
+      cursor: pointer;
+    }
+  }
+}
+.Contents{
+  height: calc(100vh - 150px);
+  width: 100vw;
+  background-color: whitesmoke;
+  overflow: scroll;
+  display: flex;
+  padding: 20px;
+  margin: 20px 5px 0 0;
+  justify-content: space-around;
+  .Contents__message{
+    height: 200px;
+    width: 100%;
+    font-size: 30px;
+    margin: 60px;
+    color: black;
+      .Contents__box{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 40px;
+        .Contents__btn{
+        height: 300px;
+        width: 250px;
+        background-color: coral;
+        margin:60px 40px 15px 40px;
+        cursor: pointer;
+      }
+    }
+  }
+}
