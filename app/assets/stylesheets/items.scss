@@ -19,10 +19,19 @@
       color: cadetblue;
       cursor: pointer;
     }
+    .Header__iconLists{
+      display: flex;
+      position: relative;
+      .Header__iconList{
+        font-size: 20px;
+        position: absolute;
+        margin:0 10px 0 10px ;
+      }
+    }
   }
 }
 .Contents{
-  height: calc(100vh - 150px);
+  height: 100vh;
   width: 100vw;
   background-color: whitesmoke;
   overflow: scroll;
@@ -30,22 +39,34 @@
   padding: 20px;
   margin: 20px 5px 0 0;
   justify-content: space-around;
-  .Contents__message{
-    height: 200px;
-    width: 100%;
-    font-size: 30px;
-    margin: 60px;
-    color: black;
-      .Contents__box{
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 40px;
-        .Contents__btn{
-        height: 300px;
-        width: 250px;
-        background-color: coral;
-        margin:60px 40px 15px 40px;
-        cursor: pointer;
+  position: relative;
+  .Contents__items{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 60%;
+    .Contents__item{
+      font-size: 25px;
+      margin: 30px 0 50px 20px;
+      color: lightgrey;
+      height: 20px;
+    }
+    .Contents__message{
+      height: 70px;
+      width: 120px;
+      font-size: 30px;
+      margin: 20px;
+      color: black;
+        .Contents__box{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 40px;
+          .Contents__btn{
+          height: 300px;
+          width: 250px;
+          margin:60px 40px 15px 40px;
+          cursor: pointer;
+        }
       }
     }
   }

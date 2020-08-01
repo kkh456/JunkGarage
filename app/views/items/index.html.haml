@@ -4,19 +4,21 @@
   .Header__box
     .Header__username
       = current_user.name
-    %ul.Header__iconLists
-      %li.Header__iconList
-        = Icon('fab','fa-buffer')
+    .Header__iconLists
+      .Header__iconList
+        = link_to edit_user_path(current_user) do
+          = icon('fas','cog')
      
 .Contents
-  .Contents__message
-    商品一覧
-    .Contents__box
-      .Contents__btn
-        1
-      .Contents__btn
-        2
-      .Contents__btn
-        3
-
-       
+  .Contents__items
+    .Contents__item
+      イルミネーション
+    .Contents__message
+      商品一覧
+      .Contents__box
+        .Contents__btn
+          %img{src: "image/images.jpg", alt: "あああ"}
+        .Contents__btn
+          %img{src: "image/images.jpeg", alt: "いいい"}
+        .Contents__btn
+          %img{src: "image/ダウンロード.jpeg", alt: "ううう"}
